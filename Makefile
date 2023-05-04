@@ -2,7 +2,7 @@ golangci: ## Linters
 	golangci-lint run -v
 
 test: ## Testing
-	go test ./internal/service/...
+	go test ./internal/service/... -v
 
 build:
 	docker build . -t ports-service

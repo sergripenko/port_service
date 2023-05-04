@@ -7,8 +7,8 @@ import (
 	"os"
 	"os/signal"
 
+	"github.com/sergripenko/port_service/internal/repository/mem"
 	"github.com/sergripenko/port_service/internal/service/port"
-	"github.com/sergripenko/port_service/internal/service/port/repository/mem"
 )
 
 type App struct {

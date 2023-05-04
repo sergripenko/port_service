@@ -4,7 +4,7 @@ import (
 	"context"
 
 	"github.com/sergripenko/port_service/internal/domain"
-	"github.com/sergripenko/port_service/internal/service/port/repository"
+	"github.com/sergripenko/port_service/internal/repository"
 )
 
 func (r *Repository) AddPort(ctx context.Context, port *domain.Port) (*domain.Port, error) {

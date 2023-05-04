@@ -12,7 +12,7 @@ import (
 	"github.com/pkg/errors"
 
 	"github.com/sergripenko/port_service/internal/domain"
-	"github.com/sergripenko/port_service/internal/service/port/repository"
+	"github.com/sergripenko/port_service/internal/repository"
 )
 
 type Service struct {
