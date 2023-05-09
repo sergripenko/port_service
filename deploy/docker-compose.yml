@@ -1,0 +1,8 @@
+
+services:
+  port_service:
+    build:
+      context: ..
+      dockerfile: ./deploy/Dockerfile
+    volumes:
+      - ./:/app
