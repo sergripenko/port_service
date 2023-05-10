@@ -15,7 +15,7 @@ build:
 run:
 	docker run -it ports-service
 
-service_build: ## Build service and all it's dependencies
+service-build: ## Build service and all it's dependencies
 	docker compose $(DOCKER_COMPOSE_OPTIONS) build --no-cache
 
 service-start-dependencies: ## Start service dependencies in Docker

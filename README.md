@@ -28,12 +28,22 @@ make golangci
 make test
 ```
 
-#### Build dockerfile:
+#### Build service in docker:
 ``` bash 
-make build
+make service-build
 ```
 
-#### Run dockerfile:
+#### Run service in docker:
 ``` bash 
-make run
+make service-start
+```
+
+#### Stop service in docker:
+``` bash 
+make service-stop
+```
+
+#### Restart service in docker:
+``` bash 
+make service-restart
 ```
