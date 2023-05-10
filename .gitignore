@@ -1,2 +1,5 @@
 /.idea/.gitignore
 /vendor/
+
+# mockery generated files
+mock_*.go

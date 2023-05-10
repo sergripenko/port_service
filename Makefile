@@ -32,3 +32,9 @@ service-stop: ## Stop service in Docker
 	@docker compose $(DOCKER_COMPOSE_OPTIONS) down -v --remove-orphans
 
 service-restart: service-stop service-start ## Restart service in Docker
+
+clean-mocks: ## Cleans old mocks
+	find . -name "mock_*.go" -type f -print0 | xargs -0 /bin/rm -f
+
+mocks: clean-mocks ## For generating mock based on all project interfaces
+	mockery --all --dir "./internal/service/port" --inpackage --case underscore
